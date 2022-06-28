@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const db = require("./models");
-const cookieSession = require("cookie-session");
 
 var corsOptions = {
   origin: "*"
@@ -17,6 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.send("Server is running");
 });
+
 
 //Connect Database
 db.mongoose
@@ -34,7 +34,7 @@ db.mongoose
   });
 
   //routes
-//   require("./Routes/user")(app);
+  require("./routes/user")(app);
 //   require("./Routes/property")(app);
 //   require("./Routes/agency")(app);
 //   require("./Routes/buy")(app);
