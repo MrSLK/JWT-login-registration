@@ -35,11 +35,6 @@ db.mongoose
 
   //routes
   require("./routes/user")(app);
-//   require("./Routes/property")(app);
-//   require("./Routes/agency")(app);
-//   require("./Routes/buy")(app);
-//   require("./Routes/rent")(app);
-//   require("./Routes/calculator")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 3001;
