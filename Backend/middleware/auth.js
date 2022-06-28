@@ -1,6 +1,5 @@
 const db = require("../models");
 const User = db.user;
-
 const jwt = require('jsonwebtoken');
 
 //Check if email exist
